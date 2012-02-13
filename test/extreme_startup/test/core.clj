@@ -11,10 +11,11 @@
     (answer ...question-without-id...) => ...answer...))
 
 (fact "without-id removes everything up to the space following the colon from a question"
-  (without-id "d1234567: what is this about") => "what is this about"
-  (without-id "abc") => "abc")
+  (without-id "d1234567: what is this about") => "what is this about")
 
-;.;. Simplicity, carried to the extreme, becomes elegance. -- Jon Franklin
+;.;. The journey is the reward. -- traditional
 (facts "about answer"
-  (answer "what is your name") => "parenthesis")
-;.;. There's a certain satisfaction in a little bit of pain. -- Madonna
+  (answer "what is your name") => "B-klammerbeutel"
+  (answer "what is 7 plus 1") => "8"
+  (answer "which of the following number is the largest: 74, 60, 701") => "701"
+  (answer "what is 1 multiplied by 9") => "9")
